@@ -12,6 +12,9 @@ const mainMenu = async () => {
     ])
         .then((answers) => {
         console.log(answers);
+        if (answers.mainMenu === 'View all employees') {
+            viewAllEmployees();
+        }
     });
 };
 mainMenu();
